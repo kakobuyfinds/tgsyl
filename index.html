@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="description" content="LoongBuy spreadsheet på dansk. Find kategorier hos HipoBuyFind, sammenlign størrelser, læs QC-billeder og beregn den samlede pris for levering til Danmark.">
+<meta name="theme-color" content="#f7f3e9">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="da_DK">
+<meta property="og:title" content="LoongBuy spreadsheet – dansk guide til sko, tøj og QC">
+<meta property="og:description" content="Find kategorier hos HipoBuyFind, sammenlign størrelser, læs QC-billeder og beregn den samlede pris for levering til Danmark.">
+<title>LoongBuy spreadsheet – dansk guide til sko, tøj og QC</title>
+<style>
+:root{color-scheme:light;--paper:#f7f3e9;--ink:#24213a;--muted:#554d65;--line:#d8cfe0;--accent:#4b2d7a;--tint:#eae1f5;--lime:#e6edaf}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+.wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+header,footer{padding:1rem 0;border-block-end:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+header a{font-weight:800;text-decoration:none}
+small,.note,figcaption{color:var(--muted)}
+main{padding-block:1.4rem 3rem}
+section{margin-block:2.6rem}
+h1,h2,h3{line-height:1.12;margin:0 0 .7rem}
+h1{font-size:clamp(2.25rem,6.8vw,5.4rem);letter-spacing:-.055em;overflow-wrap:anywhere}
+h2{font-size:clamp(1.55rem,3vw,2.4rem);letter-spacing:-.035em}
+h3{font-size:1.2rem}
+p{margin:.5rem 0 1rem}
+.hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:1.4rem;margin:0;align-items:center}
+.hero figure{background:var(--tint);border-radius:1rem;overflow:hidden}
+figure{margin:0}
+img{display:block;width:100%;height:auto}
+.hero img{aspect-ratio:4/3;object-fit:cover}
+figcaption{padding:.45rem .75rem;font-size:.8rem;overflow-wrap:anywhere}
+.tags{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.55rem;margin:0;padding:0;list-style:none}
+.tags a,.button{display:flex;align-items:center;min-height:44px;padding:.55rem .75rem;font-weight:700;text-decoration:none;border:1px solid var(--line);border-radius:.65rem}
+.tags a{height:100%;background:#fffcf6}
+.tags a:hover{background:var(--tint)}
+.button{display:inline-flex;background:var(--lime);color:var(--ink)}
+.gallery,.guides{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem}
+.gallery figure,.guides article{border:1px solid var(--line);border-radius:.8rem;overflow:hidden;background:#fffcf6}
+.gallery img{height:auto;aspect-ratio:1;object-fit:contain;background:#eee8ef}
+.guides{grid-template-columns:repeat(3,minmax(0,1fr))}
+.guides article{padding:1rem}
+.guides article p:last-child{margin-bottom:0}
+details{border-block-start:1px solid var(--line);padding:.65rem 0}
+summary{font-weight:700;cursor:pointer;padding:.25rem 0}
+details p{max-width:67ch}
+footer{border-block-start:1px solid var(--line);border-block-end:0}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.tags{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.guides{grid-template-columns:1fr}}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "inLanguage":"da",
+  "name":"LoongBuy spreadsheet – dansk guide til sko, tøj og QC",
+  "mainEntity":[
+    {"@type":"Question","name":"Hvad er et LoongBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Det er en produktoversigt, hvor du kan finde varer og sammenligne oplysninger som størrelse, farve og sælgerlink. Kategorierne i denne guide åbner hos HipoBuyFind."}},
+    {"@type":"Question","name":"Hvad skal jeg se efter på QC-billeder?","acceptedAnswer":{"@type":"Answer","text":"Sammenlign farve, mærkning, syninger og mål med den variant, du valgte. Bed om et ekstra billede, hvis en detalje er skjult. QC-billeder alene dokumenterer ikke ægthed."}},
+    {"@type":"Question","name":"Hvordan beregner jeg prisen for fragt til Danmark?","acceptedAnswer":{"@type":"Answer","text":"Bed om pakkens vægt og mål, og tjek fragtprisen for din leveringsadresse. Læg varepris, fragt og eventuelle gebyrer sammen i danske kroner. Tjek, hvilke beløb for moms og told der allerede indgår."}},
+    {"@type":"Question","name":"Hvad gør jeg, hvis et produktlink er udløbet?","acceptedAnswer":{"@type":"Answer","text":"Søg efter modelnummeret og kontrollér sælger, variant og størrelse på den nye produktside, før du bestiller."}}
+  ]
+}
+</script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/tgsyl/">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a href="https://www.hipobuyfind.com">HipoBuyFind</a>
+    <small>Dansk indkøbsguide</small>
+  </div>
+</header>
+<main class="wrap">
+  <section class="hero" aria-labelledby="intro">
+    <div>
+      <h1 id="intro">LoongBuy spreadsheet</h1>
+      <p>Find sko, tøj og tilbehør efter kategori. Sammenlign produktmål, tjek kvalitetsbilleder, og regn den samlede pris ud, før du vælger levering til Danmark.</p>
+      <a class="button" href="https://www.hipobuyfind.com">Åbn HipoBuyFind</a>
+    </div>
+    <figure>
+      <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Nike_air_Force_1_white_on_white.jpg/960px-Nike_air_Force_1_white_on_white.jpg" srcset="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Nike_air_Force_1_white_on_white.jpg/330px-Nike_air_Force_1_white_on_white.jpg 330w, https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Nike_air_Force_1_white_on_white.jpg/960px-Nike_air_Force_1_white_on_white.jpg 960w" sizes="(max-width: 760px) calc(100vw - 2rem), 480px" width="960" height="720" alt="Hvide Nike Air Force 1-sneakers" fetchpriority="high">
+      <figcaption>Nike Air Force 1 · HI 622, Wikimedia Commons · CC BY-SA 4.0 (creativecommons.org/licenses/by-sa/4.0/)</figcaption>
+    </figure>
+  </section>
+
+  <nav aria-labelledby="categories">
+    <h2 id="categories">Find en kategori</h2>
+    <ul class="tags">
+      <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Sko</a></li>
+      <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Hættetrøjer og trøjer</a></li>
+      <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-shirts</a></li>
+      <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Jakker</a></li>
+      <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Bukser og shorts</a></li>
+      <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Hovedbeklædning</a></li>
+      <li><a href="https://hipobuyfind.com/category-917-Sets.html">Tøjsæt</a></li>
+      <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Undertøj</a></li>
+      <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Sportstrøjer</a></li>
+      <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Tilbehør</a></li>
+    </ul>
+  </nav>
+
+  <section aria-labelledby="guides">
+    <h2 id="guides">Fra produktlink til levering</h2>
+    <div class="guides">
+      <article>
+        <h3>Find den rigtige størrelse</h3>
+        <p>Brug en <strong>størrelsesguide til sneakers</strong> til at sammenligne fodlængde i centimeter med sælgerens tabel. Afklar, om målet er fodlængde eller indvendig sållængde. Ligger du mellem to EU-størrelser, så spørg også om skobredden.</p>
+        <p>Læg en hættetrøje, der passer dig, fladt på bordet. Mål brystbredde, skulderbredde, ærmelængde og ryglængde. Sammenlign tøjets mål med sælgerens størrelsesskema. Ved bukser er taljemål og indvendig benlængde de bedste steder at starte.</p>
+      </article>
+      <article>
+        <h3>Læs QC-billeder før afsendelse</h3>
+        <p>QC-billeder er kvalitetskontrolfotos. Se efter ujævne syninger, forskelle i farve, skæve tryk og mærkbar slitage. Ved sko er billeder af sål, hæl og størrelsesmærke nyttige. Ved tasker kan du bede om nærbilleder af lynlås, hank og foring.</p>
+        <p>Tjek, at billederne viser den konkrete varevariant. Gem modelnummer, sælgernavn og produktlink, så du kan genkende dubletter. Spørg om returvilkår og frister, inden du godkender en forsendelse.</p>
+      </article>
+      <article>
+        <h3>Sammenlign fragt til Danmark</h3>
+        <p>Notér varepris, indenrigsfragt, international fragt, valutaomregning og eventuelle håndteringsgebyrer. Brug samme valuta, DKK, når du sammenligner den samlede pris. Tjek, hvordan moms og eventuel told er oplyst ved betaling.</p>
+        <p>Spørg, om fragtlinjen afregner efter faktisk pakkevægt eller volumenvægt. En skotøjsæske kan ændre pakkens mål. Sammenlign pris, sporingsmuligheder og forventet leveringstid for den samme pakke.</p>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="gallery">
+    <h2 id="gallery">Inspiration til materialer og detaljer</h2>
+    <p class="note">Billederne viser mærkeeksempler. Tjek den aktuelle produktside for udvalg og oplysninger om varen.</p>
+    <div class="gallery">
+      <figure>
+        <img src="https://imagedelivery.net/znDGKaxxskgDbNUpqPVRFg/ph-collection-media/images/1864619.jpg/w=480,q=75" width="480" height="480" loading="lazy" decoding="async" alt="Louis Vuitton Speedy-taske med graffiti-inspireret skrift">
+        <figcaption>Louis Vuitton Speedy · Powerhouse Collection</figcaption>
+      </figure>
+      <figure>
+        <img src="https://cdn.vuahanghieu.com/unsafe/0x0/left/top/smart/filters%3Aquality%2890%29/https%3A/admin.vuahanghieu.com/upload/news/content/2024/06/mu-gucci-original-gg-baseball-hat-789016-4hba8-9784-mau-beige-3-jpg-1718075770-11062024101610.jpg" width="480" height="480" loading="lazy" decoding="async" alt="Beige Gucci GG-baseballkasket med grøn og rød stribe">
+        <figcaption>Gucci GG-kasket · Vua Hàng Hiệu</figcaption>
+      </figure>
+      <figure>
+        <img src="https://assets.hermes.com/is/image/hermesproduct/104820B%2000_front_wm_101?$product_default_bg$=&amp;wid=480" width="480" height="480" loading="lazy" decoding="async" alt="Hermès Ex-Libris-armbånd med rund medaljon">
+        <figcaption>Hermès Ex-Libris · Hermès</figcaption>
+      </figure>
+      <figure>
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Christian_Dior_Dress.jpg/500px-Christian_Dior_Dress.jpg" width="500" height="667" loading="lazy" decoding="async" alt="Christian Dior-aftenkjole fra 1954 udstillet på museum">
+        <figcaption>Christian Dior · unforth, Wikimedia Commons · CC BY-SA 2.0 (creativecommons.org/licenses/by-sa/2.0/)</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section aria-labelledby="faq">
+    <h2 id="faq">Spørgsmål og svar</h2>
+    <details open>
+      <summary>Hvad er et LoongBuy spreadsheet?</summary>
+      <p>Det er en produktoversigt, hvor du kan finde varer og sammenligne oplysninger som størrelse, farve og sælgerlink. Kategorierne i denne guide åbner hos HipoBuyFind.</p>
+    </details>
+    <details>
+      <summary>Hvad skal jeg se efter på QC-billeder?</summary>
+      <p>Sammenlign farve, mærkning, syninger og mål med den variant, du valgte. Bed om et ekstra billede, hvis en detalje er skjult. QC-billeder alene dokumenterer ikke ægthed.</p>
+    </details>
+    <details>
+      <summary>Hvordan beregner jeg prisen for fragt til Danmark?</summary>
+      <p>Bed om pakkens vægt og mål, og tjek fragtprisen for din leveringsadresse. Læg varepris, fragt og eventuelle gebyrer sammen i danske kroner. Tjek, hvilke beløb for moms og told der allerede indgår.</p>
+    </details>
+    <details>
+      <summary>Hvad gør jeg, hvis et produktlink er udløbet?</summary>
+      <p>Søg efter modelnummeret og kontrollér sælger, variant og størrelse på den nye produktside, før du bestiller.</p>
+    </details>
+  </section>
+</main>
+<footer>
+  <div class="wrap"><small>Uafhængig guide. Mærkenavne bruges til at identificere de viste eksempler.</small></div>
+</footer>
+</body>
+</html>
